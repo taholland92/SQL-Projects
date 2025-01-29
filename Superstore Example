@@ -1,0 +1,15 @@
+SELECT item_name, price
+FROM superstore
+ORDER BY price;
+
+SELECT AVG(price)
+FROM superstore;
+
+SELECT SUM(price), category
+FROM superstore
+WHERE category = 'Kitchen Supplies';
+
+SELECT SUM(price), category
+FROM superstore
+GROUP BY category
+ORDER BY price desc;
